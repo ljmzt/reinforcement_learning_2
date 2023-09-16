@@ -1,7 +1,7 @@
 # PPO solution for lunar lander from scratch
 
 ### Purpose
-Well, I am studying LLM and it has an important RL step and my RL is a little rusty. So I set up some codes here to refresh myself. 
+Well, I am studying LLM and it has an important RL step. My RL is a little rusty, so I set up some codes here to refresh myself. 
 
 It heavily follows [Hung-Yi Lee's lecture](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php), [openai's baseline](https://github.com/openai/baselines/tree/master/baselines) (although in a much simplified form), and [this](https://github.com/nikhilbarhate99/PPO-PyTorch/blob/master/train.py) and [this](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On) github pages.
 
@@ -55,4 +55,13 @@ For random actions, it looks like:
 After training, it can successfully land:
 ![](discrete.gif)
 
+### Libraries used
+* gym==0.21.0
+* jupyter==1.0.0
+* python==3.9.7
+* pytorch==2.0.0
+* imageio==2.31.1
+* tqdm==4.65.0
+* libffi==3.3 (this is to make jupyter work on my mac)
 
+NOTE: I used a somewhat old version of gym, the newer one crashes on my mac.
